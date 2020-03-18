@@ -10,7 +10,7 @@ title:            TITLE
 tagline:          'Tagline'
 description:      'Description. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:              http://hyde.getpoole.com
-baseurl:          /hyde/
+baseurl:          /
 
 author:
   name:           'Mark Otto'
