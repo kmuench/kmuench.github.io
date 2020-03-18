@@ -16,7 +16,11 @@ There are currently two themes built on Poole:
 
 Learn more and contribute on [GitHub](https://github.com/poole).
 
-## Setup
+## Bioinformatics for Biologists
+
+Here are some suggested pages:
+
+* [From Biologist to Bioinformatician in Ten Worthwhile Steps](https://kmuench.github.io/2013/12/28/introducing-hyde/)
 
 Some fun facts about the setup of this project include:
 
