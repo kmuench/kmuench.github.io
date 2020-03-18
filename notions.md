@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About2
+title: Notions
 ---
 
 <p class="message">
