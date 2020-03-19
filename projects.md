@@ -2,13 +2,7 @@
 layout: page
 title: Projects
 ---
-
+# Oops! Where is the content?
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  This page is under construction.
 </p>
-
-# Level 1
-
-## Level 2
-
-### LEvel 3
