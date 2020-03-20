@@ -14,7 +14,6 @@ Here is a selection of teaching aids I've made.
 
 Here are some suggested pages:
 
-* [From Biologist to Bioinformatician in Ten Worthwhile Steps](https://kmuench.github.io/2020/03/18/ten-steps-to-bioinf/)
-
+* {% post_url 2020-03-18-ten-steps-to-bioinf %}
 
 
