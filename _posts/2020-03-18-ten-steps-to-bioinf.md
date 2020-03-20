@@ -3,7 +3,6 @@ layout: post
 title: From Biologist to Bioinformatician in Ten Worthwhile Steps
 ---
 
-
 It’s finally happened. You have an experimental biology question, but don’t know where to start your research. Traditional techniques have lost their luster, or you’re hungry to learn something new. The papers you read make claims you feel powerless to interpret. Maybe your advisor is making you do it. Maybe it’s your reviewer’s fault. Maybe Excel just crashed one too many times. <i>(Special March 2020 edit: Maybe you’re just plain quarantined and need something to do until your keycard works again!)</i>
 
 One way or another, you’ve decided to learn bioinformatics.
@@ -12,7 +11,7 @@ Congratulations! I am truly, genuinely thrilled for you. You are about to embark
 
 That said, it’s absolutely normal to feel afraid. This journey will have many twists and turns. This path is not just a learning curve, but a perpetual upward climb. 
 
-<img src = 'https://fictionfanblog.files.wordpress.com/2019/06/homer-mountain.gif'>
+<img src = 'https://fictionfanblog.files.wordpress.com/2019/06/homer-mountain.gif' class = 'center'>
 
 You will spend many hours Googling answers to fix basic mistakes (this, you will find, is a critical and ever-present part of the process). You will feel perpetually surrounded by people who wrote their thesis on the tools you are struggling to grasp (this, too, is unavoidable in a field that is both wide and deep). You will spend a gear-grinding year getting good at single cell RNA-Seq, wander into a talk on the limitations of transcriptomics, and leave questioning every professional choice you have ever made. 
 
@@ -26,16 +25,16 @@ Given my own background, it is geared towards those learning transcriptomics (e.
 
 Without further ado - those steps are:
 
-* STEP ONE: Find a project that you care about.
-* STEP TWO: Commit to one approach (at first).
-* STEP THREE: Decide if you want to code.
-* STEP FOUR: Start prototyping.
-* STEP FIVE: Use Github for version control.
-* STEP SIX: Pay attention to error messages.
-* STEP SEVEN: Do the vignettes.
-* STEP EIGHT: Ask for help.
-* STEP NINE: Manage frustration.
-* STEP TEN: Refine your prototype.
+* **STEP ONE: Find a project that you care about.**
+* **STEP TWO: Commit to one approach (at first).**
+* **STEP THREE: Decide if you want to code.**
+* **STEP FOUR: Start prototyping.**
+* **STEP FIVE: Use Github for version control.**
+* **STEP SIX: Pay attention to error messages.**
+* **STEP SEVEN: Do the vignettes.**
+* **STEP EIGHT: Ask for help.**
+* **STEP NINE: Manage frustration.**
+* **STEP TEN: Refine your prototype.**
 
 ## STEP ONE: Find a project that you care about
 You may very well have a hypothesis you want to test, and a dataset in hand already. If not – that’s great news! 
@@ -169,3 +168,5 @@ If you’ve made it this far, congratulations! You can now mark the part of your
 You know what? Buy yourself that pint of ice cream. Eat it while gloating. You deserve it.
 
 
+
+<i>A big thanks to Connie Pasternak for her editorial guidance and excellent feedback on this post.</i>
