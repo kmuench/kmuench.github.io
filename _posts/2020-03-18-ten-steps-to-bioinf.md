@@ -26,26 +26,17 @@ Given my own background, it is geared towards those learning transcriptomics (e.
 Without further ado - those steps are:
 
 1. [Find a project that you care about.](https://kmuench.github.io/2020/03/18/step-1/)
-2. [Find a project that you care about.]()
-* **STEP TWO: Commit to one approach (at first).**
-* **STEP THREE: Decide if you want to code.**
-* **STEP FOUR: Start prototyping.**
-* **STEP FIVE: Use Github for version control.**
-* **STEP SIX: Pay attention to error messages.**
-* **STEP SEVEN: Do the vignettes.**
-* **STEP EIGHT: Ask for help.**
-* **STEP NINE: Manage frustration.**
-* **STEP TEN: Refine your prototype.**
+2. [Commit to one approach (at first).]()
+3. [Decide if you want to code.]()
+4. [Start prototyping.]()
+5. [Use Github for version control.]()
+6. [Pay attention to error messages.]()
+7. [Do the vignettes.]()
+9. [Ask for help.]()
+9. [Manage frustration.]()
+10. [Refine your prototype.]()
 
 
-
-
-## STEP TWO: Commit to one approach (at first)
-A lot of biologists - myself included - waste a lot of time trying to plan out the “correct” pipeline rather than just coding something up. In fact, there is usually no “correct” pipeline - and there are often multiple different, valid approaches one can use for any given problem.
-
-When I started my transcriptomics career, I would drop one software pipeline as soon as I got a whiff that something else might be better. Cuffdiff is the past*? Abandon the project halfway through and switch to edgeR! Of course, I quickly discovered that there was no single right way to do things - only dozens of people with strong opinions on the particular way to tailor your analysis for your specific purpose. As a consequence, I wasted a lot of time half-learning techniques, growing steadily more discouraged as I had nothing to show for my hours of work. It wasn’t until I committed to writing a complete version of one of the many potential pipelines that I felt I was making progress. Moreover, once I knew those software packages inside and out, it was much easier to understand why others might be better or worse for my data.
-
-Of course, if you are replicating the results from an existing paper, this step is a little easier - just follow the pipeline described in that paper’s methods.
 
 
 
