@@ -28,16 +28,16 @@ Given my own background, it is geared towards those learning transcriptomics (e.
 Without further ado - those steps are:
 
 1. [Find a project that you care about.](https://kmuench.github.io/2020/03/18/step-1/)
-2. [Commit to one approach (at first).]()
-3. [Decide if you want to code.]()
-4. [Start prototyping.]()
-5. [Use Github for version control.]()
-6. [Pay attention to error messages.]()
-7. [Do the vignettes.]()
-9. [Ask for help.]()
-9. [Manage frustration.]()
-10. [Refine your prototype.]()
+2. [Commit to one approach (at first).](https://kmuench.github.io/2020/03/18/step-2/)
+3. [Decide if you want to code.](https://kmuench.github.io/2020/03/18/step-3/)
+4. [Start prototyping.](https://kmuench.github.io/2020/03/18/step-4/)
+5. [Use Github for version control.](https://kmuench.github.io/2020/03/18/step-5/)
+6. [Pay attention to error messages.](https://kmuench.github.io/2020/03/18/step-6/)
+7. [Do the vignettes.](https://kmuench.github.io/2020/03/18/step-7/)
+8. [Ask for help.](https://kmuench.github.io/2020/03/18/step-8/)
+9. [Manage frustration.](https://kmuench.github.io/2020/03/18/step-9/)
+10. [Refine your prototype.](https://kmuench.github.io/2020/03/18/step-10/)
 
 Use your powers wisely and well! 
 
-<i>A big thanks to Connie Pasternak for her editorial guidance and excellent feedback on this post.</i>
+<i>A big thanks to Connie Pasternak for her excellent editorial guidance, and to Monica Bhide for her style assistance.</i>
