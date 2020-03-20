@@ -11,11 +11,6 @@ Congratulations! I am truly, genuinely thrilled for you. You are about to embark
 
 That said, it’s absolutely normal to feel afraid. This journey will have many twists and turns. This path is not just a learning curve, but a perpetual upward climb. 
 
-<img class="right" src ="https://fictionfanblog.files.wordpress.com/2019/06/homer-mountain.gif">
-
-{: .center}
-![image](https://fictionfanblog.files.wordpress.com/2019/06/homer-mountain.gif)
-
 <p align="center">
   <img width="460" height="300" src="https://fictionfanblog.files.wordpress.com/2019/06/homer-mountain.gif">
 </p>
