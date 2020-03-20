@@ -45,8 +45,9 @@ If you intend to collect your own data, spend some time defining your research q
 
 <p class="message">
 PRO TIP: I highly recommend that you do not collect samples or data for your own sequencing experiment before you have done two things:
-1. Establish what results you expect to see in your data, even if it is just an expression change in a handful of genes – this will act as a sanity check, and ensure you aren’t investing in a dataset that will yield nothing.
-2. Truly consider how to craft a batch effect-minimizing experimental design, preferably with the help of an experienced bioinformatician. Every step of the experiment - from the method with which samples are collected, to the day on which the library is prepared - has the potential to introduce batch effects that could render your $10,000 experiment uninterpretable. It happens! It really does!
+
+<p>1. Establish what results you expect to see in your data, even if it is just an expression change in a handful of genes – this will act as a sanity check, and ensure you aren’t investing in a dataset that will yield nothing.</p>
+<p>2. Truly consider how to craft a batch effect-minimizing experimental design, preferably with the help of an experienced bioinformatician. Every step of the experiment - from the method with which samples are collected, to the day on which the library is prepared - has the potential to introduce batch effects that could render your $10,000 experiment uninterpretable. It happens! It really does!</p>
   </p>
 
 
