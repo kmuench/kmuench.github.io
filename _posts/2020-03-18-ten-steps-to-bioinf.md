@@ -25,7 +25,7 @@ Given my own background, it is geared towards those learning transcriptomics (e.
 
 Without further ado - those steps are:
 
-* [STEP ONE: Find a project that you care about.]({% post_url 2020-03-18-step-1 %})
+* [STEP ONE: Find a project that you care about.](https://kmuench.github.io/2020/03/18/step-1/)
 **STEP ONE: Find a project that you care about.**
 * **STEP TWO: Commit to one approach (at first).**
 * **STEP THREE: Decide if you want to code.**
