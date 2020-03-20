@@ -166,7 +166,10 @@ a.sidebar-nav-item:focus {
   }
 }
 
-
+/* To center images */
+.center {
+    text-align: center;
+}
 
 /*
  * Themes
