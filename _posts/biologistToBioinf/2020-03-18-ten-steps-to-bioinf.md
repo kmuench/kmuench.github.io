@@ -14,7 +14,7 @@ That said, it’s absolutely normal to feel afraid. This journey will have many 
 <img class="right" src ="https://fictionfanblog.files.wordpress.com/2019/06/homer-mountain.gif">
 
 {: .center}
-![image](https://education.github.com/assets/sdp-backpack-6f872c4211af1bac3aef0c6e2b5fbb7a.png "Github Developer Pack")
+![image](https://fictionfanblog.files.wordpress.com/2019/06/homer-mountain.gif)
 
 You will spend many hours Googling answers to fix basic mistakes (this, you will find, is a critical and ever-present part of the process). You will feel perpetually surrounded by people who wrote their thesis on the tools you are struggling to grasp (this, too, is unavoidable in a field that is both wide and deep). You will spend a gear-grinding year getting good at single cell RNA-Seq, wander into a talk on the limitations of transcriptomics, and leave questioning every professional choice you have ever made. 
 
