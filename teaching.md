@@ -15,5 +15,3 @@ Here is a selection of teaching aids I've made.
 Here are some suggested pages:
 
 * {% post_url 2020-03-18-ten-steps-to-bioinf %}
-
-
