@@ -21,7 +21,7 @@ But here’s the thing: you can do it. You can master the basics of genomics, tr
 
 The first challenge you will face is an abundance of resources and advice. Where do you begin? Should you find an online class, or try to join a seminar series? What will actually be important to know down the line? In short - what is the best use of your time?
 
-I have spent years teaching transcriptomics to both myself and others. What follows is the approach that seems to work the best for a wide variety of people. Though the strategy below might feel like a long and difficult process, following these steps will help you learn the most important features as quickly as possible.
+I have spent years teaching transcriptomics to both myself and others. What follows is the approach that seems to work the best for a wide variety of people. Though the path mapped out below might look like a long and difficult process, I truly believe following these steps teach you the most important aspects of the craft as quickly as possible. (I've also double-checked my philosophizing with others, from backgrounds both biology and non-, and they agree.)
 
 Given my own background, it is geared towards those learning transcriptomics (e.g., RNA-Seq) but these principles are broadly applicable. I promise they will continue to be useful for any type of computational biology skill you acquire down the line.
 
