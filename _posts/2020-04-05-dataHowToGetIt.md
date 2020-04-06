@@ -133,7 +133,7 @@ A note for R users: some individuals will upload their data as a [library](https
 ## Importing CSV files
 Hopefully you’re lucky enough that your data of interest is stored as a CSV (Comma Separated Value) file! That’s a regular plain text file that uses a convention for storing tabular data. In CSV files, some kind of delimiter (a comma, or sometimes a space, or a tab, or a slash) is used indicate what different columns are. CSV files are straightforward to import in [Python](https://realpython.com/python-csv/) and [R](http://www.r-tutor.com/r-introduction/data-frame/data-import).
 
-By the way, you can [export Excel files as CSV files](https://www.ablebits.com/office-addins-blog/2014/04/24/convert-excel-csv/) if you’d like to have a smooth way of importing your Excel projects into R and the .xlsx file type is giving you trouble.
+By the way, you can [export Excel files as CSV files](https://support.office.com/en-us/article/save-a-workbook-to-text-format-txt-or-csv-3e9a9d6c-70da-4255-aa28-fcacf1f081e6) if you’d like to have a smooth way of importing your Excel projects into R and the .xlsx file type is giving you trouble.
 
 
 ## Data from an FTP Site
