@@ -45,9 +45,12 @@ Obtaining and loading data can be a surprisingly tricky part of the process - fe
 
 R users should consider [the R datasets package](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html).
 
-R automatically loads this built-in library of datasets when it starts, so you’ll barely have to list a finger to use them. You can see the full list of options by typing data() into command line. Plus, since they’re already cleaned, these truly present the lowest barrier to practice an R practitioner can find.
+R automatically loads this built-in library of datasets when it starts, so you’ll barely have to list a finger to use them. You can see the full list of options by typing ```data()``` into command line. Plus, since they’re already cleaned, these data are truly the lowest barrier to entry an R practitioner can find.
 To load the dataset called “iris”, simply type:
+
+{% highlight R %}
 data(iris)
+{% endhighlight %}
 
 Many have names that read like the titles of modern art pieces: “The World’s Telephones” (data(WorldPhones)), “Flow of the River Nile” (data(Nile)), “Occupational Status of Fathers and their Sons” (occupationalStatus). Easy doesn’t mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech (“Daily Closing Prices of Major European Stock Indices, 1991-1998”, data(esoph) ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( data(EuStockMarkets) ).
 
@@ -72,6 +75,10 @@ You don’t need to be in a kaggle competition to download a cool dataset and pl
 - [Harvard Dataverse](https://dataverse.harvard.edu)
 Another dataset search. This one has taken the time to make a section for COVID-19 data, for those quarantining data scientists in April 2020 (https://dataverse.harvard.edu/dataverse/harvard?q=covid-19). 
 There are plenty of  palette cleansers derived from research groups as well - perhaps try “Survey Data on Memorable Experiences with Sad Music” (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GLSIXB)
+
+
+---------
+
 
 
 <a name="genomicData"></a>
@@ -115,6 +122,12 @@ Note for R users: some individuals will upload their data as a [library](https:/
 - [dbGAP](https://www.ncbi.nlm.nih.gov/gap/): (databases looking at genotype-phenotype association)
 - Anshul Kundaje maintains an impressive list of a [variety of genomic datasets](https://sites.google.com/site/anshulkundaje/idatasets)
 
+
+
+
+---------
+
+
 <a name="extra tools"></a>
 # Extra tools for Downloading Data Data
 
@@ -134,19 +147,8 @@ Wget is a command line application - that means you use it by typing a command i
 For a Mac user, once wget is installed, the process is pretty easy. Open the Terminal application on your computer, and change your directory to your desktop by typing:
 
 {% highlight bash %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
+cd ~/Desktop
 {% endhighlight %}
-
-<pre>
-  <code class="bash">
-    puts "Cd ~/Desktop"
-  </code>
-</pre>
-
 
 “cd” means “change directory”; the part after that is the “path” to the folder on your computer where you want the data to be downloaded. I hate accidentally filling my desktop with random FTP files, so I usually make a folder and go into that directory by typing:
 
