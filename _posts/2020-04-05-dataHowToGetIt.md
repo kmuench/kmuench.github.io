@@ -52,29 +52,25 @@ To load the dataset called “iris”, simply type:
 data(iris)
 {% endhighlight %}
 
-Many have names that read like the titles of modern art pieces: “The World’s Telephones” (data(WorldPhones)), “Flow of the River Nile” (data(Nile)), “Occupational Status of Fathers and their Sons” (occupationalStatus). Easy doesn’t mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech (“Daily Closing Prices of Major European Stock Indices, 1991-1998”, data(esoph) ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( data(EuStockMarkets) ).
+Many have names that read like the titles of modern art pieces: “The World’s Telephones” (```data(WorldPhones)```), “Flow of the River Nile” (data(Nile)), “Occupational Status of Fathers and their Sons” (```data(occupationalStatus)```). Easy doesn’t mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech (“Daily Closing Prices of Major European Stock Indices, 1991-1998”, ```data(esoph)``` ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( ```data(EuStockMarkets)``` ).
 
-I personally have found that, without context, I have a hard time getting excited about, say, “Body Temperature Series of Two Beavers” ( data(beavers) ). Plus, the datasets tend to be on the smaller side.
+I personally have found that, without context, I have a hard time getting excited about, say, “Body Temperature Series of Two Beavers” ( ```data(beavers)``` ). Plus, the datasets tend to be on the smaller side.
 
 Python users might have to do a little additional work, but have several options:
 - [PyDataset](https://github.com/iamaziz/PyDataset) to access over 700 sample datasets
 - [Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html) and [Scikit-learn](https://scikit-learn.org/stable/datasets/index.html) both come with example datasets preloaded
-- If you've just gotta have those R datasets, consider using the [rpy2](https://pypi.org/project/rpy2/) package. It allows you to use R within Python, including loading the datasets above - described (here)(https://stackoverflow.com/questions/16579407/are-there-any-example-data-sets-for-python)
+- If you've just gotta have those R datasets, consider using the [rpy2](https://pypi.org/project/rpy2/) package. It allows you to use R within Python, including loading the datasets above - described [here](https://stackoverflow.com/questions/16579407/are-there-any-example-data-sets-for-python)
 
 <a name="searchEngineNiche"></a>
 ## Search engines for to suit your niche tastes
 These datasets might require a little extra elbow grease until you have nice, pretty, completely-filled-out, standardized-entry tables to explore. That said, you might have a better chance of discovering a question that sparks your imagination. 
 
-- [Data.gov](https://www.data.gov/). What in the United States do you care about? Health? Climate? Ecosystems? Education? You can find data related to all of the above here. You’ll have to do some digging to get to the actual data itself, but you should find a variety of interesting datasets, from [heart disease deaths in Oklahoma](https://catalog.data.gov/dataset/heart-disease-deaths-95993) to [beer statistics](https://www.ttb.gov/beer/statistics). They offer data [challenges](https://www.data.gov/climate/climate-challenges), as well.
-- [An excellent list of lists of free datasets](https://r-dir.com/reference/datasets.html)
-There are several interesting specialized databases in here, such as a [collection of social network data](http://snap.stanford.edu/data/), or [global development data](https://data.worldbank.org/)
-- [Google’s Dataset search](https://datasetsearch.research.google.com/)
-Like Google, but for datasets! Again, be aware that not all of these datasets are going to be nicely formatted, or high-quality
-- [Kaggle’s datasets](https://www.kaggle.com/datasets) 
-You don’t need to be in a kaggle competition to download a cool dataset and play with it.
-- [Harvard Dataverse](https://dataverse.harvard.edu)
-Another dataset search. This one has taken the time to make a section for COVID-19 data, for those quarantining data scientists in April 2020 (https://dataverse.harvard.edu/dataverse/harvard?q=covid-19). 
-There are plenty of  palette cleansers derived from research groups as well - perhaps try “Survey Data on Memorable Experiences with Sad Music” (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GLSIXB)
+- [Data.gov](https://www.data.gov/). What in the United States do you care about? Health? Climate? Ecosystems? Education? You can find data related to all of the above here. You’ll have to do some digging to get to the actual data itself, but you should find a variety of interesting datasets, from [heart disease deaths in Oklahoma](https://catalog.data.gov/dataset/heart-disease-deaths-95993) to [beer statistics](https://www.ttb.gov/beer/statistics). They offer civic-minded data [challenges](https://www.data.gov/climate/climate-challenges), as well.
+- An excellent list of lists of free datasets [on this website](https://r-dir.com/reference/datasets.html).
+There are several enticing, specialized databases in here, such as a [collection of social network data](http://snap.stanford.edu/data/), or [global development data](https://data.worldbank.org/)
+- [Google’s Dataset search](https://datasetsearch.research.google.com/). Like Google, but for datasets! Again, be aware that not all of these datasets are going to be nicely formatted, or high-quality
+- [Kaggle’s datasets](https://www.kaggle.com/datasets). You don’t need to be in a kaggle competition to download a cool dataset and play with it.
+- [Harvard Dataverse](https://dataverse.harvard.edu). Another dataset search. This one has taken the time to make a section for [COVID-19 data] (https://dataverse.harvard.edu/dataverse/harvard?q=covid-19), for those quarantining data scientists in April 2020.  There are plenty of palette-cleansingly specific datasets derived from research groups as well - perhaps try [“Survey Data on Memorable Experiences with Sad Music”](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GLSIXB)
 
 
 ---------
@@ -91,29 +87,28 @@ Remember, any research supported with NIH funding [must make its sequencing data
 ## Functional genomics data from GEO
 So many of the aforementioned NIH-supported researchers upload their data here that some papers will refer readers to accession numbers rather than URLs to the data. Its greatest flaw is how difficult the interface is to interpret. 
 
-My suggestion: don’t worry about figuring out trying to download data directly from the GEO website, or figuring out what a MINIML file is. If you’d like to download the raw data, you can consider using wget (described below) to download data from the [GEO FTP site](https://ftp.ncbi.nlm.nih.gov/geo/) download the raw data. There are some handy tutorials on how to find the FTP site corresponding to your data of interest, including [this one](https://www.imm.ox.ac.uk/files/ccb/downloading_fastq_geo). You’ll also need to uncompress the data using the SRA Toolkit, tutorial [here](http://homer.ucsd.edu/homer/basicTutorial/retrieveFiles.html).
+My suggestion: don’t worry about figuring out trying to download data directly from the GEO website, or figuring out what a MINIML file is. If you’d like to download the raw data, you can consider using wget (described <a href="#extra tools">below</a>) to download data from the [GEO FTP site](https://ftp.ncbi.nlm.nih.gov/geo/) download the raw data. There are some handy tutorials on how to find the FTP site corresponding to your data of interest, including [this one](https://www.imm.ox.ac.uk/files/ccb/downloading_fastq_geo). You’ll also need to uncompress the data using the SRA Toolkit, tutorial [here](http://homer.ucsd.edu/homer/basicTutorial/retrieveFiles.html).
 
-However, if you’re just looking for some count tables to play with and don’t need the .fastqs, check out [GEOquery](https://bioconductor.org/packages/release/bioc/html/GEOquery.html) for R (nice tutorial [here] (https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html) and [here](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/geo/)), and GEOparse (https://pypi.org/project/GEOparse/) (tutorial [here](https://www.biostars.org/p/400047/) for Python.
+However, if you’re just looking for some count tables to play with and don’t need the .fastqs, check out [GEOquery](https://bioconductor.org/packages/release/bioc/html/GEOquery.html) for R (nice tutorial [here](https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html) and [here](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/geo/)), and [GEOparse](https://pypi.org/project/GEOparse/) (tutorial [here](https://www.biostars.org/p/400047/)) for Python.
 
 Several groups have curated some choice lists of data, either to highlight great datasets or to standardize processing steps:
 <a name="curatedBulk"></a>
 ### Curated bulk RNA-Seq data
-[This website](http://www.cs.cmu.edu/~ckingsf/sharq/index.html) is a cleaned-up version of the GEO search interface for transcriptomic data through 2014, and can help you find GEO accession numbers.
-[DEE2] (http://dee2.io/), [RECOUNT2](https://jhubiostatistics.shinyapps.io/recount/), and [ARCHS4](https://amp.pharm.mssm.edu/archs4/) has uniformly processed bulk RNA-Seq data from GEO
+- [This website](http://www.cs.cmu.edu/~ckingsf/sharq/index.html) is a cleaned-up version of the GEO search interface for transcriptomic data through 2014, and can help you find GEO accession numbers.
+- [DEE2](http://dee2.io/), [RECOUNT2](https://jhubiostatistics.shinyapps.io/recount/), and [ARCHS4](https://amp.pharm.mssm.edu/archs4/) has uniformly processed bulk RNA-Seq data from GEO
 <a name="curatedSC"></a>
-### Curated scRNA-Seq data
-[The Hemberg lab](https://hemberg-lab.github.io/scRNA.seq.datasets/) has thoughtfully curated the accession numbers for many datasets they use profiling variosu tissues from human and mouse:
-[This R package](http://bioconductor.org/packages/release/data/experiment/html/scRNAseq.html) provides single cell RNA-Seq datasets that can be loaded like the data() packages before, with a focus on brain
 
-<div class="message">
-Note for R users: some individuals will upload their data as a [library](https://www.bioconductor.org/packages/release/data/experiment/) that can be installed and imported, like the data() packages discussed before. You can nab a copy of the [10x PBMC data](https://www.bioconductor.org/packages/release/data/experiment/html/TENxPBMCData.html) this way, although, of course, it’s always “safer” to get the data directly from the source in case the library creation accidentally introduced small discrepancies.
-  </div>
+### Curated scRNA-Seq data
+- [The Hemberg lab](https://hemberg-lab.github.io/scRNA.seq.datasets/) has thoughtfully curated the accession numbers for many datasets they use profiling variosu tissues from human and mouse:
+- [This R package](http://bioconductor.org/packages/release/data/experiment/html/scRNAseq.html) provides single cell RNA-Seq datasets that can be loaded like the data() packages before, with a focus on brain
+
+Note for R users: some individuals will upload their data as a [library](https://www.bioconductor.org/packages/release/data/experiment/) that can be installed and imported, like the ```data()``` packages discussed before. You can nab a copy of the [10x PBMC data](https://www.bioconductor.org/packages/release/data/experiment/html/TENxPBMCData.html) this way, although, of course, it’s always “safer” to get the data directly from the source in case the library creation accidentally introduced small discrepancies.
 
 <a name="scNotGEO"></a>
 ## Single Cell RNA-Seq Data that isn’t from GEO
 - The [European Nucleotide Archive](https://www.ebi.ac.uk/ena) is another popular, well-maintained, heavy-hitting database of genomic data, with its own downloading methods described [here](https://www.ebi.ac.uk/ena/browse/read-download).
 - [The Broad’s Single Cell Portal](https://github.com/broadinstitute/single_cell_portal) gives you both fastq() and [expression files](https://github.com/broadinstitute/single_cell_portal/wiki/Expression-File).
-- [10x Genomics scRNA-Seq datasets](https://support.10xgenomics.com/single-cell-gene-expression/datasets) - used as benchmarking data for many scRNA-Seq tools today
+- [10x Genomics scRNA-Seq datasets](https://support.10xgenomics.com/single-cell-gene-expression/datasets) are used as benchmarking data for many scRNA-Seq tools today
 
 <a name="variant"></a>
 ## Genome variant data, and other sites of note
@@ -152,14 +147,20 @@ cd ~/Desktop
 
 “cd” means “change directory”; the part after that is the “path” to the folder on your computer where you want the data to be downloaded. I hate accidentally filling my desktop with random FTP files, so I usually make a folder and go into that directory by typing:
 
-Mkdir my_ftp_download
-Cd ~/Desktop/my_ftp_download
+{% highlight bash %}
+mkdir my_ftp_download
+cd ~/Desktop/my_ftp_download
+{% endhighlight %}
 
 To download a single file:
-Wget ftp://url/to/FTP/site/myFile.zip
+{% highlight bash %}
+wget ftp://url/to/FTP/site/myFile.zip
+{% endhighlight %}
 
 To download a whole folder (directory) of files:
-Wget -r ftp://url/to/FTP/site/
+{% highlight bash %}
+wget -r ftp://url/to/FTP/site/
+{% endhighlight %}
 
 
 ## Data in the JSON formet
