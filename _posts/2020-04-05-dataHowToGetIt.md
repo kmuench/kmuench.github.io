@@ -14,7 +14,7 @@ Yet, easeful data acquisition is fundamental to the rest of the learning process
 
 There are two challenges, then: how do you find data that you care about? And how can you get that data into R or Python as quickly and as neatly as possible?
 
-Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to acquiring genomics data, since that's where I personally have spent many hours feeling data acquisition frustration.
+Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to acquiring genomics data, since that was a particular thorn in my side when I was getting started.
 
 Click the corresponding link if you’re looking for...
 
