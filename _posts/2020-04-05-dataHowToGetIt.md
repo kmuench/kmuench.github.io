@@ -4,7 +4,7 @@ title: Data - where is it, and how do I get it?
 ---
 There is a single, inescapable truth that governs the life of every analyst: in order to do data science, you need data.
 
-I notice that data import is rarely given more than a paragraph of thought in tutorials for beginners. That is perhaps unsurprising: no one’s entering the field for the non-stop thrill-ride of replacing blanks with NaNs, or the glorious mysteries of the [SRA format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
+I notice that data import is rarely the focus of tutorials for beginners. That is perhaps unsurprising: no one’s entering the field for the non-stop thrill-ride of replacing blanks with NaNs, or the glorious mysteries of the [SRA format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
 
 Yet, easeful data acquisition is fundamental to the rest of the learning process. A new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun. Also - this is very important - it's easier to absorb the solution when you actually <i>care about the problem</i>.
 
