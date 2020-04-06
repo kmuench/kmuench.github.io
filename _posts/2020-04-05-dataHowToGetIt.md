@@ -10,13 +10,12 @@ Yet, easeful data acquisition is fundamental to the rest of the learning process
 
 There are two challenges, then: how do you find data that you care about? And how can you get it into R or Python as quickly and as neatly as possible?
 
-Here, I’ve assembled some public datasets and resources to help lower the first hurdle in your analysis projects. I’ve ordered them roughly from the cleanest and easiest datasets to procure, to the potentially more exciting (albeit much less curated) datasets. I’ll also devote a separate section to genomics data, since I've spent quite a bit of time searching around for those. 
+Here, I’ve assembled some public datasets and resources to help lower the first hurdle in your analysis projects. I’ll devote a separate section to genomics data, since I've spent quite a bit of time searching around for those. 
 
 Click the corresponding link if you’re looking for...
 
 - <a href="#generalTabularData">General Tabular Data</a>
   - <a href = "#smallAmountEasyPracData">A small amount of easy-to-load of practice data</a>
-  - <a href = "#biggerDataCivic">Bigger data for civic-minded people</a>
   - <a href = "#searchEngineNiche">Search engines for to suit your niche tastes</a>
 - <a href="#genomicData">Genomic Data</a>
   - <a href = "#functionalGEO">Functional genomics data from GEO</a>
@@ -37,14 +36,14 @@ Remember, if it seems overwhelming - break the problem down. The data is on a we
 
 Obtaining and loading data can be a surprisingly tricky part of the process - feel good when you finally begin that journey of a thousand miles with this essential first step.
 
-
+---------
 
 <a name="generalTabularData"></a>
 # General Tabular Data
 <a name="smallAmountEasyPracData"></a>
 ## A small amount of easy-to-load of practice data:
 
-- For R users, [the R datasets package](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html).
+R users should consider [the R datasets package](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html).
 
 R automatically loads this built-in library of datasets when it starts, so you’ll barely have to list a finger to use them. You can see the full list of options by typing data() into command line. Plus, since they’re already cleaned, these truly present the lowest barrier to practice an R practitioner can find.
 To load the dataset called “iris”, simply type:
@@ -59,27 +58,24 @@ Python users might have to do a little additional work, but have several options
 - [Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html) and [Scikit-learn](https://scikit-learn.org/stable/datasets/index.html) both come with example datasets preloaded
 - If you've just gotta have those R datasets, consider using the [rpy2](https://pypi.org/project/rpy2/) package. It allows you to use R within Python, including loading the datasets above - described (here)(https://stackoverflow.com/questions/16579407/are-there-any-example-data-sets-for-python)
 
-<a name="biggerDataCivic"></a>
-## Bigger data for civic-minded people
-[Data.gov](https://www.data.gov/)
-What in the United States do you care about? Health? Climate? Ecosystems? Education? You can find data related to all of the above here. You’ll have to do some digging to get to the actual data itself, but you should be able to find .csv files, for example, [beer statistics](https://www.ttb.gov/beer/statistics).
-
 <a name="searchEngineNiche"></a>
 ## Search engines for to suit your niche tastes
 These datasets might require a little extra elbow grease until you have nice, pretty, completely-filled-out, standardized-entry tables to explore. That said, you might have a better chance of discovering a question that sparks your imagination. 
-[Everybody] [An excellent list of lists of free datasets] (https://r-dir.com/reference/datasets.html)
-There are several interesting specialized databases in here, such as a [collection of social network data](http://snap.stanford.edu/data/), [global development data](https://data.worldbank.org/)
-[Google’s Dataset search](https://datasetsearch.research.google.com/)
+
+- [Data.gov](https://www.data.gov/). What in the United States do you care about? Health? Climate? Ecosystems? Education? You can find data related to all of the above here. You’ll have to do some digging to get to the actual data itself, but you should find a variety of interesting datasets, from [heart disease deaths in Oklahoma](https://catalog.data.gov/dataset/heart-disease-deaths-95993) to [beer statistics](https://www.ttb.gov/beer/statistics). They offer data [challenges](https://www.data.gov/climate/climate-challenges), as well.
+- [An excellent list of lists of free datasets](https://r-dir.com/reference/datasets.html)
+There are several interesting specialized databases in here, such as a [collection of social network data](http://snap.stanford.edu/data/), or [global development data](https://data.worldbank.org/)
+- [Google’s Dataset search](https://datasetsearch.research.google.com/)
 Like Google, but for datasets! Again, be aware that not all of these datasets are going to be nicely formatted, or high-quality
-[Kaggle’s datasets](https://www.kaggle.com/datasets) 
+- [Kaggle’s datasets](https://www.kaggle.com/datasets) 
 You don’t need to be in a kaggle competition to download a cool dataset and play with it.
-[Harvard Dataverse](https://dataverse.harvard.edu)
+- [Harvard Dataverse](https://dataverse.harvard.edu)
 Another dataset search. This one has taken the time to make a section for COVID-19 data, for those quarantining data scientists in April 2020 (https://dataverse.harvard.edu/dataverse/harvard?q=covid-19). 
 There are plenty of  palette cleansers derived from research groups as well - perhaps try “Survey Data on Memorable Experiences with Sad Music” (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GLSIXB)
 
 
 <a name="genomicData"></a>
-# Genomic DATA
+# Genomic Data
 
 Remember, any research supported with NIH funding [must make its sequencing data publically available by publication time](https://grants.nih.gov/grants/policy/data_sharing/data_sharing_guidance.htm#time). The authors usually indicate where the data repositories are located (or even provide the GEO database ID) in the Methods section or somewhere in Supplementary Files.
 
