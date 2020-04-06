@@ -15,7 +15,7 @@ Here, I’ve assembled some public datasets and resources to help lower the firs
 Click the corresponding link if you’re looking for...
 
 - <a href="#generalTabularData">General Tabular Data</a>
--- <a href = "smallAmountEasyPracData">A small amount of easy-to-load of practice data</a>
+  - <a href = "smallAmountEasyPracData">A small amount of easy-to-load of practice data</a>
 
 Many of the methods below can be imported with ease into R or Python using existing packages. However, every now and again you’ll find a cool dataset that you’ll need to load yourself. In that case, check out:
 [extra tools for importing data]
