@@ -10,9 +10,9 @@ I'm afraid there's no way around it: in order to do data science, you're going t
 
 I notice that data import is rarely the focus of tutorials for beginners. That is perhaps unsurprising: no one’s entering the field for the non-stop thrill-ride of replacing blanks with NaNs, or the glorious mysteries of the [SRA format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
 
-Yet, easeful data acquisition is fundamental to the rest of the learning process. A new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun. Also, as it turns out, absorbing the solution is much more effective when you <i>actually care about the problem</i>.
+Yet, easeful data acquisition is fundamental to the rest of the learning process. Sometime who is limited to the data that's easy to import, not the data they care about, will have a much harder time overcoming a lack of motivation in the eleventh hour of googling error messages. Plus, a new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun.
 
-There are two challenges, then: how do you find data that you care about? And how can you get it into R or Python as quickly and as neatly as possible?
+There are two challenges, then: how do you find data that you care about? And - no matter the formet - how can you get it into R or Python as quickly and as neatly as possible?
 
 Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to acquiring genomics data, since that's where I personally felt a lot of my data download frustration. 
 
@@ -27,8 +27,6 @@ Click the corresponding link if you’re looking for...
     - <a href = "#curatedSC">Curated scRNA-Seq data</a>
   - <a href = "#scNotGEO">Single Cell RNA-Seq Data that isn’t from GEO</a>
   - <a href = "#variant">Genome variant data, and other sites of note</a>
-  
-  
 
 Many of the methods below can be imported with ease into R or Python using existing packages. However, every now and again you’ll find a cool dataset that you’ll need to load yourself. In that case, check out the section on <a href="#extra tools">extra tools for downloading and importing data</a>.
 
