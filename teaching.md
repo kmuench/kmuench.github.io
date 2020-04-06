@@ -10,6 +10,9 @@ title: Teaching
 
 Here is a selection of teaching aids I've made.
 
+## Getting started with data analysis
+* [Data: Where is it, and how do I get it?](https://kmuench.github.io/2020/04/05/dataHowToGetIt/)
+
 ## Bioinformatics for Biologists
 
 Here are some suggested pages:
