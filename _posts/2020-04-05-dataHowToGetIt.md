@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Data - where is it, and how do I get it?
+title: Data - where is it, and how do I get it?*
 ---
 <p align="center">
   <img width="460" height="300" src="https://c.pxhere.com/images/84/b7/2d8b54b996763aa0aad1d553513f-1442539.jpg!d">
 </p>
+
+<i>*If you've come here to correct my grammar, I can only say: <a href="https://en.wikipedia.org/wiki/Data_(word)#cite_note-7">this wording hurts me as much as it hurts you.</a></i>
 
 I'm afraid there's no way around it: in order to do data science, you're going to need data.
 
