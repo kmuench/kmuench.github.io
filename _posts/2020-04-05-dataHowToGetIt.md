@@ -2,15 +2,15 @@
 layout: post
 title: Data - where is it, and how do I get it?
 ---
-There is a single, inescapable truth that governs the life of every analyst: in order to do data science, you need data.
+As inconvenient as it can be, there is one ineffable truth the no analyst can escape: in order to do data science, you need data.
 
 I notice that data import is rarely the focus of tutorials for beginners. That is perhaps unsurprising: no one’s entering the field for the non-stop thrill-ride of replacing blanks with NaNs, or the glorious mysteries of the [SRA format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
 
-Yet, easeful data acquisition is fundamental to the rest of the learning process. A new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun. Also - this is very important - it's easier to absorb the solution when you actually <i>care about the problem</i>.
+Yet, easeful data acquisition is fundamental to the rest of the learning process. A new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun. Also, as it turns out, absorbing the solution is much more effective when you <i>actually care about the problem</i>.
 
 There are two challenges, then: how do you find data that you care about? And how can you get it into R or Python as quickly and as neatly as possible?
 
-Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to genomics data, since I've personally spent a lot of time searching in vain for the links to raw paper data. 
+Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to acquiring genomics data, since that's where I personally felt a lot of my data download frustration. 
 
 Click the corresponding link if you’re looking for...
 
@@ -26,15 +26,15 @@ Click the corresponding link if you’re looking for...
   
   
 
-Many of the methods below can be imported with ease into R or Python using existing packages. However, every now and again you’ll find a cool dataset that you’ll need to load yourself. In that case, check out the section on <a href="#extra tools">extra tools for importing data</a>.
+Many of the methods below can be imported with ease into R or Python using existing packages. However, every now and again you’ll find a cool dataset that you’ll need to load yourself. In that case, check out the section on <a href="#extra tools">extra tools for downloading and importing data</a>.
 
-I recommend making a note of when and where you download data, since some datasets can be updated (or change location) from year to year. If someone wants to repeat your analysis, they’ll have more faith in your results if they can replicate your output from the same starting point.
+I recommend <b>making a note of when and how you download data</b>, since some datasets can be updated (or change location) from year to year. That way, others who want to replicate your analysis can use the same starting point.
 
-You don’t need the world’s biggest or fanciest dataset to do something interesting (a friend of mine once practiced R by analyzing the astrological sign of various serial killers). The important thing is that you find a practice dataset that sparks your curiosity, and teaches you the skills you'd like to learn.
+You don’t need the world’s biggest or fanciest dataset to do something interesting (a friend of mine once practiced R by analyzing the astrological signs of various serial killers). The important thing is that you find a practice dataset that sparks your curiosity, and teaches you the skills you'd like to learn.
 
-Remember, if it seems overwhelming - break the problem down. The data is on a website - how can you put it on your computer? The data is on your computer - how do you import it into R? Some form of the data in in R - what does it need to look like to make a scatterplot with it? 
+Remember, if it seems overwhelming, try breaking the problem down. If the data is on a website - how can you get it on your computer? If the data is on your computer - how do you import it into R? If some form of the data in in R - what does it need to look like in order to make a scatterplot with it? 
 
-Obtaining and loading data can be a surprisingly tricky part of the process - feel good when you finally begin that journey of a thousand miles with this essential first step.
+Obtaining and loading data can be a surprisingly tricky part of the process, and it's natural to stumble on this step. Make sure you reward yourself when you get everything in place and can finally begin that journey of a thousand miles!
 
 ---------
 
@@ -124,7 +124,7 @@ Note for R users: some individuals will upload their data as a [library](https:/
 
 
 <a name="extra tools"></a>
-# Extra tools for Downloading Data Data
+# Extra tools for downloading and importing data
 
 ## Importing CSV files
 Hopefully you’re lucky enough that your data is stored as a CSV (Comma Separated Value) file! That’s just a way of storing tabular data in a ASCII format, with some kind of delimiter (a comma, or sometimes a space, or a tab, or a slash) to indicate what different columns are. These are straightforward to import in [Python](https://realpython.com/python-csv/) or [R](http://www.r-tutor.com/r-introduction/data-frame/data-import).
@@ -167,6 +167,6 @@ wget -r ftp://url/to/FTP/site/
 Javascript Open Notation - another file format in which data can be stored. It shouldn’t be too hard with the correct package to load JSON into [Python](https://linuxconfig.org/how-to-parse-data-from-json-into-python) or into [R](https://stackoverflow.com/questions/2617600/importing-data-from-a-json-file-into-r).
 
 ## Extracting data from a PDF
-Occasionally, you’ll discover that your data of interest is embedded into a PDF document (looking at you, [U.S. beer statistics](https://www.ttb.gov/beer/statistics)). Please, don’t type every number into an Excel sheet by hand - there is a better, more automated, faster way! You’ll want to investigate tools for scraping data from PDFs - Tabula (https://tabula.technology/) appears popular for this purpose.
+Occasionally, you’ll discover that your data of interest is embedded into a PDF document (looking at you, [U.S. beer statistics](https://www.ttb.gov/beer/statistics)). Please, don’t type every number into an Excel sheet by hand - there is a better, more automated, faster way! You’ll want to investigate tools for scraping data from PDFs - [Tabula](https://tabula.technology/) appears popular for this purpose.
 
 
