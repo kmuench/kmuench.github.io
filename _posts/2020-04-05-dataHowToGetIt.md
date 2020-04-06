@@ -58,7 +58,7 @@ Many of these datasets have names that read like the titles of modern art pieces
 
 Easy doesn’t have to mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech ("(O)esophageal cancer in Ille-et-Vilaine, France", ```data(esoph)``` ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( ```data(EuStockMarkets)``` ).
 
-However, I personally have found that I usually need more context to get excited about studying, say, “Body Temperature Series of Two Beavers” ( ```data(beavers)``` ). Plus, the datasets tend to be on the smaller side. However, if you just need something easy to load so you can get coding as soon as possible, these datasets are a great choice!
+However, I personally find that I need more context before I get jazzed about analyzing, say, “Body Temperature Series of Two Beavers” ( ```data(beavers)``` ). Plus, the datasets tend to be on the smaller side. However, if you just need something easy to load so you can get coding as soon as possible, these datasets are a great choice!
 
 Python users might have to do slightly more work, but they have several options:
 - [PyDataset](https://github.com/iamaziz/PyDataset) to access over 700 sample datasets.
