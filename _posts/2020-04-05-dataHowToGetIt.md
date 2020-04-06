@@ -10,15 +10,24 @@ Yet, easeful data acquisition is fundamental to the rest of the learning process
 
 There are two challenges, then: how do you find data that you care about? And how can you get it into R or Python as quickly and as neatly as possible?
 
-Here, I’ve assembled some public datasets and resources to help lower the first hurdle in your analysis projects. I’ve ordered them roughly from the cleanest and easiest datasets to procure, to the potentially more exciting (albeit much less curated) datasets. I’ll also devote a separate section to genomics data. 
+Here, I’ve assembled some public datasets and resources to help lower the first hurdle in your analysis projects. I’ve ordered them roughly from the cleanest and easiest datasets to procure, to the potentially more exciting (albeit much less curated) datasets. I’ll also devote a separate section to genomics data, since I've spent quite a bit of time searching around for those. 
 
 Click the corresponding link if you’re looking for...
 
 - <a href="#generalTabularData">General Tabular Data</a>
-  - <a href = "smallAmountEasyPracData">A small amount of easy-to-load of practice data</a>
+  - <a href = "#smallAmountEasyPracData">A small amount of easy-to-load of practice data</a>
+  - <a href = "#biggerDataCivic">Bigger data for civic-minded people</a>
+  - <a href = "#searchEngineNiche">Search engines for to suit your niche tastes</a>
+- <a href="#genomicData">Genomic Data</a>
+  - <a href = "#functionalGEO">Functional genomics data from GEO</a>
+    - <a href = "#curatedBulk">Curated bulk RNA-Seq data</a>
+    - <a href = "#curatedSC">Curated scRNA-Seq data</a>
+  - <a href = "#scNotGEO">Single Cell RNA-Seq Data that isn’t from GEO</a>
+  - <a href = "#variant">Genome variant data, and other sites of note</a>
+  
+  
 
-Many of the methods below can be imported with ease into R or Python using existing packages. However, every now and again you’ll find a cool dataset that you’ll need to load yourself. In that case, check out:
-[extra tools for importing data]
+Many of the methods below can be imported with ease into R or Python using existing packages. However, every now and again you’ll find a cool dataset that you’ll need to load yourself. In that case, check out the section on <a href="#extra tools">extra tools for importing data</a>.
 
 I recommend making a note of when and where you download data, since some datasets can be updated (or change location) from year to year. If someone wants to repeat your analysis, they’ll have more faith in your results if they can replicate your output from the same starting point.
 
@@ -50,11 +59,13 @@ Python users might have to do a little additional work, but have several options
 - [Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html) and [Scikit-learn](https://scikit-learn.org/stable/datasets/index.html) both come with example datasets preloaded
 - If you've just gotta have those R datasets, consider using the [rpy2](https://pypi.org/project/rpy2/) package. It allows you to use R within Python, including loading the datasets above - described (here)(https://stackoverflow.com/questions/16579407/are-there-any-example-data-sets-for-python)
 
+<a name="biggerDataCivic"></a>
 ## Bigger data for civic-minded people
 [Data.gov](https://www.data.gov/)
 What in the United States do you care about? Health? Climate? Ecosystems? Education? You can find data related to all of the above here. You’ll have to do some digging to get to the actual data itself, but you should be able to find .csv files, for example, [beer statistics](https://www.ttb.gov/beer/statistics).
 
-## Search engines for datasets so you can find and clean your own niche interest
+<a name="searchEngineNiche"></a>
+## Search engines for to suit your niche tastes
 These datasets might require a little extra elbow grease until you have nice, pretty, completely-filled-out, standardized-entry tables to explore. That said, you might have a better chance of discovering a question that sparks your imagination. 
 [Everybody] [An excellent list of lists of free datasets] (https://r-dir.com/reference/datasets.html)
 There are several interesting specialized databases in here, such as a [collection of social network data](http://snap.stanford.edu/data/), [global development data](https://data.worldbank.org/)
@@ -67,13 +78,13 @@ Another dataset search. This one has taken the time to make a section for COVID-
 There are plenty of  palette cleansers derived from research groups as well - perhaps try “Survey Data on Memorable Experiences with Sad Music” (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GLSIXB)
 
 
-
-# SEQUENCING DATA
+<a name="genomicData"></a>
+# Genomic DATA
 
 Remember, any research supported with NIH funding [must make its sequencing data publically available by publication time](https://grants.nih.gov/grants/policy/data_sharing/data_sharing_guidance.htm#time). The authors usually indicate where the data repositories are located (or even provide the GEO database ID) in the Methods section or somewhere in Supplementary Files.
 
 
-
+<a name="functionalGEO"></a>
 ## Functional genomics data from GEO
 So many of the aforementioned NIH-supported researchers upload their data here that some papers will refer readers to accession numbers rather than URLs to the data. Its greatest flaw is how difficult the interface is to interpret. 
 
@@ -82,28 +93,33 @@ My suggestion: don’t worry about figuring out trying to download data directly
 However, if you’re just looking for some count tables to play with and don’t need the .fastqs, check out [GEOquery](https://bioconductor.org/packages/release/bioc/html/GEOquery.html) for R (nice tutorial [here] (https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html) and [here](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/geo/)), and GEOparse (https://pypi.org/project/GEOparse/) (tutorial [here](https://www.biostars.org/p/400047/) for Python.
 
 Several groups have curated some choice lists of data, either to highlight great datasets or to standardize processing steps:
-### Bulk RNA-Seq data curated by someone else
+<a name="curatedBulk"></a>
+### Curated bulk RNA-Seq data
 [This website](http://www.cs.cmu.edu/~ckingsf/sharq/index.html) is a cleaned-up version of the GEO search interface for transcriptomic data through 2014, and can help you find GEO accession numbers.
 [DEE2] (http://dee2.io/), [RECOUNT2](https://jhubiostatistics.shinyapps.io/recount/), and [ARCHS4](https://amp.pharm.mssm.edu/archs4/) has uniformly processed bulk RNA-Seq data from GEO
-### scRNA-Seq curated by someone else
+<a name="curatedSC"></a>
+### Curated scRNA-Seq data
 [The Hemberg lab](https://hemberg-lab.github.io/scRNA.seq.datasets/) has thoughtfully curated the accession numbers for many datasets they use profiling variosu tissues from human and mouse:
 [This R package](http://bioconductor.org/packages/release/data/experiment/html/scRNAseq.html) provides single cell RNA-Seq datasets that can be loaded like the data() packages before, with a focus on brain
 
-**Note for R users: some individuals will upload their data as a [library](https://www.bioconductor.org/packages/release/data/experiment/) that can be installed and imported, like the data() packages discussed before. You can nab a copy of the [10x PBMC data](https://www.bioconductor.org/packages/release/data/experiment/html/TENxPBMCData.html) this way, although, of course, it’s always “safer” to get the data directly from the source in case the library creation accidentally introduced small discrepancies.
+<div class="message">
+Note for R users: some individuals will upload their data as a [library](https://www.bioconductor.org/packages/release/data/experiment/) that can be installed and imported, like the data() packages discussed before. You can nab a copy of the [10x PBMC data](https://www.bioconductor.org/packages/release/data/experiment/html/TENxPBMCData.html) this way, although, of course, it’s always “safer” to get the data directly from the source in case the library creation accidentally introduced small discrepancies.
+  </div>
 
-
+<a name="scNotGEO"></a>
 ## Single Cell RNA-Seq Data that isn’t from GEO
-The [European Nucleotide Archive](https://www.ebi.ac.uk/ena) is another popular, well-maintained, heavy-hitting database of genomic data, with its own downloading methods described [here](https://www.ebi.ac.uk/ena/browse/read-download).
-The Broad’s Single Cell Portal (https://github.com/broadinstitute/single_cell_portal) gives you both fastq() and expression files (https://github.com/broadinstitute/single_cell_portal/wiki/Expression-File).
-[10x Genomics scRNA-Seq datasets](https://support.10xgenomics.com/single-cell-gene-expression/datasets) - used as benchmarking data for many scRNA-Seq tools today
+- The [European Nucleotide Archive](https://www.ebi.ac.uk/ena) is another popular, well-maintained, heavy-hitting database of genomic data, with its own downloading methods described [here](https://www.ebi.ac.uk/ena/browse/read-download).
+- [The Broad’s Single Cell Portal](https://github.com/broadinstitute/single_cell_portal) gives you both fastq() and [expression files](https://github.com/broadinstitute/single_cell_portal/wiki/Expression-File).
+- [10x Genomics scRNA-Seq datasets](https://support.10xgenomics.com/single-cell-gene-expression/datasets) - used as benchmarking data for many scRNA-Seq tools today
 
-
+<a name="variant"></a>
 ## Genome variant data, and other sites of note
-[GTEx] (https://www.gtexportal.org/home/)
-[GDC Cancer Portal](https://portal.gdc.cancer.gov/): 2.5 petabytes of eQTL data related to cancer
-[dbGAP](https://www.ncbi.nlm.nih.gov/gap/): (databases looking at genotype-phenotype association)
-Anshul Kundaje maintains an impressive list of a variety of genome and functional gneomic datasets: https://sites.google.com/site/anshulkundaje/idatasets
+- [GTEx](https://www.gtexportal.org/home/)
+- [GDC Cancer Portal](https://portal.gdc.cancer.gov/): 2.5 petabytes of eQTL data related to cancer
+- [dbGAP](https://www.ncbi.nlm.nih.gov/gap/): (databases looking at genotype-phenotype association)
+- Anshul Kundaje maintains an impressive list of a [variety of genomic datasets](https://sites.google.com/site/anshulkundaje/idatasets)
 
+<a name="extra tools"></a>
 # Extra tools for Downloading Data Data
 
 ## Importing CSV files
@@ -121,7 +137,20 @@ Wget is a command line application - that means you use it by typing a command i
 
 For a Mac user, once wget is installed, the process is pretty easy. Open the Terminal application on your computer, and change your directory to your desktop by typing:
 
-Cd ~/Desktop
+{% highlight bash %}
+// Example can be run directly in your JavaScript console
+
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
+
+{% endhighlight %}
+
+<pre>
+  <code class="bash">
+    puts "Cd ~/Desktop"
+  </code>
+</pre>
+
 
 “cd” means “change directory”; the part after that is the “path” to the folder on your computer where you want the data to be downloaded. I hate accidentally filling my desktop with random FTP files, so I usually make a folder and go into that directory by typing:
 
