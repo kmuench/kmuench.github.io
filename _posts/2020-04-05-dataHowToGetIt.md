@@ -2,6 +2,10 @@
 layout: post
 title: Data - where is it, and how do I get it?
 ---
+<p align="center">
+  <img width="460" height="300" src="https://c.pxhere.com/images/84/b7/2d8b54b996763aa0aad1d553513f-1442539.jpg!d">
+</p>
+
 I'm afraid there's no getting around it: in order to do data science, you're going to need data.
 
 I notice that data import is rarely the focus of tutorials for beginners. That is perhaps unsurprising: no one’s entering the field for the non-stop thrill-ride of replacing blanks with NaNs, or the glorious mysteries of the [SRA format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
