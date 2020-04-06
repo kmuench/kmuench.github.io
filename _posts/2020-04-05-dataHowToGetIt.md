@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data: Where is it, and how do I get it?
+title: Data - where is it, and how do I get it?
 ---
 There is a single, inescapable truth that governs the life of every analyst: in order to do data science, you need data.
 
