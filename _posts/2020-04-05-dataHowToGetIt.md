@@ -6,11 +6,11 @@ There is a single, inescapable truth that governs the life of every analyst: in 
 
 I notice that data import is rarely given more than a paragraph of thought in tutorials for beginners. That is perhaps unsurprising: no one’s entering the field for the non-stop thrill-ride of replacing blanks with NaNs, or the glorious mysteries of the [SRA format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
 
-Yet, easeful data acquisition is fundamental to the rest of the learning process. A new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun. Also - this is very important - it turns out that you absorb the material much more deeply when you’re actually curious about the analysis you’re doing.
+Yet, easeful data acquisition is fundamental to the rest of the learning process. A new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun. Also - this is very important - it's easier to absorb the solution when you actually <i>care about the problem</i>.
 
 There are two challenges, then: how do you find data that you care about? And how can you get it into R or Python as quickly and as neatly as possible?
 
-Here, I’ve assembled some public datasets and resources to help lower the first hurdle in your analysis projects. I’ll devote a separate section to genomics data, since I've spent quite a bit of time searching around for those. 
+Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to genomics data, since I've personally spent a lot of time searching in vain for the links to raw paper data. 
 
 Click the corresponding link if you’re looking for...
 
