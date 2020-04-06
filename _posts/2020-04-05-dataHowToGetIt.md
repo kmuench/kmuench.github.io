@@ -10,11 +10,11 @@ I'm afraid there's no way around it: in order to do data science, you're going t
 
 I notice that data import is rarely the focus of tutorials for beginners. That is perhaps unsurprising: no one’s entering the field for the non-stop thrill-ride of replacing blank cells with NaNs, or the glorious mysteries of the [SRA format](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
 
-Yet, easeful data acquisition is fundamental to the rest of the learning process. Sometime who is limited to the data that's easy to import, not the data they care about, will have a much harder time overcoming a lack of motivation in the eleventh hour of googling error messages. Plus, a new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun.
+Yet, easeful data acquisition is fundamental to the rest of the learning process. Someone limited to studying only data that's easy to import, not the data they care about, will have a much harder time overcoming a lack of motivation in the eleventh hour of googling error messages. Plus, a new coder who gets frustrated with the data download process can quickly lose faith in their abilities, and quit the process before they’ve even begun.
 
-There are two challenges, then: how do you find data that you care about? And - no matter the formet - how can you get it into R or Python as quickly and as neatly as possible?
+There are two challenges, then: how do you find data that you care about? And how can you get that data into R or Python as quickly and as neatly as possible?
 
-Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to acquiring genomics data, since that's where I personally felt a lot of my data download frustration. 
+Here, I’ve assembled some public datasets and resources to help lower these hurdles in your first analysis projects. I’ll devote a separate section to acquiring genomics data, since that's where I personally have spent many hours feeling data acquisition frustration.
 
 Click the corresponding link if you’re looking for...
 
@@ -47,20 +47,22 @@ Obtaining and loading data can be a surprisingly tricky part of the process, and
 
 R users should consider [the R datasets package](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html).
 
-R automatically loads this built-in library of datasets when it starts, so you’ll barely have to list a finger to use them. You can see the full list of options by typing ```data()``` into command line. Plus, since they’re already cleaned, these data are truly the lowest barrier to entry an R practitioner can find.
+R automatically loads this built-in library of datasets when it starts, so you’ll barely have to list a finger to use them. You can see the full list of options by typing ```data()``` into command line. Plus, since they’re already cleaned, these data are truly the lowest barrier to entry an R user can find.
 To load the dataset called “iris”, simply type:
 
 {% highlight R %}
 data(iris)
 {% endhighlight %}
 
-Many have names that read like the titles of modern art pieces: “The World’s Telephones” (```data(WorldPhones)```), “Flow of the River Nile” (```data(Nile)```), “Occupational Status of Fathers and their Sons” (```data(occupationalStatus)```). Easy doesn’t mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech ("(O)esophageal cancer in Ille-et-Vilaine, France", ```data(esoph)``` ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( ```data(EuStockMarkets)``` ).
+Many of these datasets have names that read like the titles of modern art pieces: “The World’s Telephones” (```data(WorldPhones)```), “Flow of the River Nile” (```data(Nile)```), “Occupational Status of Fathers and their Sons” (```data(occupationalStatus)```). 
 
-I personally have found that, without context, I have a hard time getting excited about, say, “Body Temperature Series of Two Beavers” ( ```data(beavers)``` ). Plus, the datasets tend to be on the smaller side. However, if you just need something easy to load so you can get going as soon as possible, these datasets are a great choice!
+Easy doesn’t have to mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech ("(O)esophageal cancer in Ille-et-Vilaine, France", ```data(esoph)``` ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( ```data(EuStockMarkets)``` ).
 
-Python users might have to do a little additional work, but have several options:
-- [PyDataset](https://github.com/iamaziz/PyDataset) to access over 700 sample datasets
-- [Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html) and [scikit-learn](https://scikit-learn.org/stable/datasets/index.html) both come with example datasets preloaded
+However, I personally have found that I usually need more context to get excited about studying, say, “Body Temperature Series of Two Beavers” ( ```data(beavers)``` ). Plus, the datasets tend to be on the smaller side. However, if you just need something easy to load so you can get coding as soon as possible, these datasets are a great choice!
+
+Python users might have to do slightly more work, but they have several options:
+- [PyDataset](https://github.com/iamaziz/PyDataset) to access over 700 sample datasets.
+- [Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html) and [scikit-learn](https://scikit-learn.org/stable/datasets/index.html) both come with example datasets preloaded.
 - If you've just gotta have those R datasets, consider using the [rpy2](https://pypi.org/project/rpy2/) package. It allows you to use R within Python, including loading the datasets above, described [here](https://stackoverflow.com/questions/16579407/are-there-any-example-data-sets-for-python).
 
 <a name="searchEngineNiche"></a>
@@ -89,13 +91,13 @@ Remember, any research supported with NIH funding [must make its sequencing data
 ## Functional genomics data from GEO
 Many, many of the aforementioned NIH-supported researchers upload their data here. Some papers will even provide an accession number (e.g., "GSE40548") rather than a URL for the data. 
 
-GEO's greatest flaw, unfortunately, is its website design and misleading terminology. My suggestion: don’t worry about figuring out trying to download data directly from the GEO website, or figuring out what a MINiML file is. 
+GEO's greatest flaw, unfortunately, is its website design and misleading terminology. My suggestion: don’t worry about figuring out trying to download data directly from the GEO website, or figuring out what a MINiML file is.
 
-If you’d like to download the raw data, you can consider using wget (described <a href="#extra tools">below</a>) to download data from the [GEO FTP site](https://ftp.ncbi.nlm.nih.gov/geo/) download the raw data. There are some handy tutorials on how to find the FTP site corresponding to your data of interest, including [this one](https://www.imm.ox.ac.uk/files/ccb/downloading_fastq_geo). You’ll also need to uncompress the data using the SRA Toolkit, tutorial [here](http://homer.ucsd.edu/homer/basicTutorial/retrieveFiles.html).
+If you’re just looking for some count tables to play with and don’t need the raw .fastqs, check out [GEOquery](https://bioconductor.org/packages/release/bioc/html/GEOquery.html) for R (nice tutorial [here](https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html) and [here](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/geo/)), and [GEOparse](https://pypi.org/project/GEOparse/) (tutorial [here](https://www.biostars.org/p/400047/)) for Python.
 
-However, if you’re just looking for some count tables to play with and don’t need the .fastqs, check out [GEOquery](https://bioconductor.org/packages/release/bioc/html/GEOquery.html) for R (nice tutorial [here](https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html) and [here](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/geo/)), and [GEOparse](https://pypi.org/project/GEOparse/) (tutorial [here](https://www.biostars.org/p/400047/)) for Python.
+Alternatively, if you’d like to download the raw data, you can consider using wget (described <a href="#extra tools">below</a>) to download data from the [GEO FTP site](https://ftp.ncbi.nlm.nih.gov/geo/) download the raw data. There are some handy tutorials on how to find the FTP site corresponding to your data of interest, including [this one](https://www.imm.ox.ac.uk/files/ccb/downloading_fastq_geo). You’ll also need to uncompress the data using the SRA Toolkit, tutorial [here](http://homer.ucsd.edu/homer/basicTutorial/retrieveFiles.html).
 
-Several groups have curated some choice lists of data, either to highlight great datasets or to standardize processing steps:
+Several groups have curated some choice lists of datasets, either to highlight great datasets or to provide standard preprocessing to support meta-analysis:
 <a name="curatedBulk"></a>
 ### Curated bulk RNA-Seq data
 - [This website](http://www.cs.cmu.edu/~ckingsf/sharq/index.html) is a cleaned-up version of the GEO search interface for transcriptomic data through 2014, and can help you find GEO accession numbers.
@@ -104,22 +106,22 @@ Several groups have curated some choice lists of data, either to highlight great
 
 ### Curated scRNA-Seq data
 - [The Hemberg lab](https://hemberg-lab.github.io/scRNA.seq.datasets/) has thoughtfully curated the accession numbers for many datasets they use profiling various tissues from human and mouse.
-- [This R package](http://bioconductor.org/packages/release/data/experiment/html/scRNAseq.html) provides single cell RNA-Seq datasets that can be loaded like the data() packages before, with a focus on brain tissue.
+- [This R package](http://bioconductor.org/packages/release/data/experiment/html/scRNAseq.html) provides single cell RNA-Seq datasets that can be loaded like the ```data()``` packages before, with a focus on brain tissue.
 
 <a name="scNotGEO"></a>
 ## Single Cell RNA-Seq Data that isn’t from GEO
 - The [European Nucleotide Archive](https://www.ebi.ac.uk/ena) is GEO's European sibling - another popular, well-maintained data repository, with its own downloading methods described [here](https://www.ebi.ac.uk/ena/browse/read-download).
-- [The Broad’s Single Cell Portal](https://github.com/broadinstitute/single_cell_portal) is increasingly popular. It allows you to download both fastq() and [expression files](https://github.com/broadinstitute/single_cell_portal/wiki/Expression-File).
+- [The Broad’s Single Cell Portal](https://github.com/broadinstitute/single_cell_portal) is increasingly popular. It allows you to download both fastq and [expression files](https://github.com/broadinstitute/single_cell_portal/wiki/Expression-File).
 - [10x Genomics scRNA-Seq datasets](https://support.10xgenomics.com/single-cell-gene-expression/datasets) are used as benchmarking data for many scRNA-Seq tools today.
 
 <a name="variant"></a>
 ## Genome variant data, and other sites of note
 - [GTEx](https://www.gtexportal.org/home/)
-- [GDC Cancer Portal](https://portal.gdc.cancer.gov/): 2.5 petabytes of eQTL data related to cancer
-- [dbGAP](https://www.ncbi.nlm.nih.gov/gap/): (databases looking at genotype-phenotype association)
-- Anshul Kundaje maintains an impressive list of a [variety of genomic datasets](https://sites.google.com/site/anshulkundaje/idatasets)
+- [GDC Cancer Portal](https://portal.gdc.cancer.gov/) - 2.5 petabytes of eQTL data related to cancer!
+- [dbGAP](https://www.ncbi.nlm.nih.gov/gap/)
+- Anshul Kundaje maintains an impressive list of a [variety of genomic datasets](https://sites.google.com/site/anshulkundaje/idatasets).
 
-A note for R users: some individuals will upload their data as a [library](https://www.bioconductor.org/packages/release/data/experiment/) that can be installed and imported, like the ```data()``` packages discussed before. You can nab a copy of the [10x PBMC data](https://www.bioconductor.org/packages/release/data/experiment/html/TENxPBMCData.html) this way, although, of course, it’s always “safer” to get the data directly from the source in case the library creation accidentally introduced small discrepancies.
+A note for R users: some individuals will upload their data as a [library](https://www.bioconductor.org/packages/release/data/experiment/) that can be installed and imported, like the ```data()``` packages discussed before. You can nab a copy of the [10x PBMC data](https://www.bioconductor.org/packages/release/data/experiment/html/TENxPBMCData.html) this way, although, of course, it’s safer to download the data yourself directly from a repository in case small errors or discrepanices were introduced during library creation.
 
 
 ---------
@@ -131,7 +133,7 @@ A note for R users: some individuals will upload their data as a [library](https
 ## Importing CSV files
 Hopefully you’re lucky enough that your data of interest is stored as a CSV (Comma Separated Value) file! That’s a regular plain text file that uses a convention for storing tabular data. In CSV files, some kind of delimiter (a comma, or sometimes a space, or a tab, or a slash) is used indicate what different columns are. CSV files are straightforward to import in [Python](https://realpython.com/python-csv/) and [R](http://www.r-tutor.com/r-introduction/data-frame/data-import).
 
-By the way, you can [export Excel files as .CSV files](https://www.ablebits.com/office-addins-blog/2014/04/24/convert-excel-csv/) if you’d like to have a smooth way of importing your Excel projects into R and the .xlsx file type is giving you trouble.
+By the way, you can [export Excel files as CSV files](https://www.ablebits.com/office-addins-blog/2014/04/24/convert-excel-csv/) if you’d like to have a smooth way of importing your Excel projects into R and the .xlsx file type is giving you trouble.
 
 
 ## Data from an FTP Site
