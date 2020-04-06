@@ -67,7 +67,7 @@ Python users might have to do slightly more work, but they have several options:
 
 <a name="searchEngineNiche"></a>
 ## Search engines for to suit your niche tastes
-These datasets might require a little extra elbow grease until you have nice, pretty, completely-filled-out, standardized-entry tables to explore. That said, your imagination will have much more room for exploration. 
+These datasets might require a little extra elbow grease until you have nice, pretty, completely-filled-out, standardized-entry tables to explore. That said, your imagination will have much more room for exploration. Many of these datasets will be in formats accessible through the <a href="#extra tools">extra tools</a> section below.
 
 - [Data.gov](https://www.data.gov/). What in the United States do you care about? Health? Climate? Ecosystems? Education? You can find data related to all of the above here. You’ll have to do some digging to get to the actual data itself, but you should find a variety of interesting reports, from [heart disease deaths in Oklahoma](https://catalog.data.gov/dataset/heart-disease-deaths-95993) to [beer statistics](https://www.ttb.gov/beer/statistics). They offer civic-minded data [challenges](https://www.data.gov/climate/climate-challenges), as well.
 - An excellent list of lists of free datasets lives [on this website](https://r-dir.com/reference/datasets.html).
