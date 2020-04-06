@@ -15,7 +15,8 @@ Here, I’ve assembled some public datasets and resources to help lower the firs
 
 Click the corresponding link if you’re looking for...
 
-[links]
+- <a href="#generalTabularData">General Tabular Data</a>
+-- <a href = "smallAmountEasyPracData">A small amount of easy-to-load of practice data</a>
 
 Many of the methods below can be imported with ease into R or Python using existing packages. However, every now and again you’ll find a cool dataset that you’ll need to load yourself. In that case, check out:
 [extra tools for importing data]
@@ -30,12 +31,16 @@ Obtaining and loading data can be a surprisingly tricky part of the process - fe
 
 
 
-# GENERAL TABULAR DATA
+<a name="generalTabularData"></a>
+# General Tabular Data
+<a name="smallAmountEasyPracData"></a>
 ## A small amount of easy-to-load of practice data:
+
 For R users, [ The R datasets package. ](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
 R automatically loads this built-in library of datasets when it starts, so you’ll barely have to list a finger to use them. You can see the full list of options by typing data() into command line. Plus, since they’re already cleaned, these truly present the lowest barrier to practice an R practitioner can find.
 To load the dataset called “iris”, simply type:
 data(iris)
+
 Many have names that read like the titles of modern art pieces: “The World’s Telephones” (data(WorldPhones)), “Flow of the River Nile” (data(Nile)), “Occupational Status of Fathers and their Sons” (occupationalStatus). Easy doesn’t mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech (“Daily Closing Prices of Major European Stock Indices, 1991-1998”, data(esoph) ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( data(EuStockMarkets) ).
 I personally have found that, without context, I have a hard time getting excited about, say, “Body Temperature Series of Two Beavers” ( data(beavers) ). Plus, the datasets tend to be on the smaller side.
 Python users might have to do a little additional work, but have several options:
