@@ -23,11 +23,11 @@ Many of the methods below can be imported with ease into R or Python using exist
 
 I recommend making a note of when and where you download data, since some datasets can be updated (or change location) from year to year. If someone wants to repeat your analysis, they’ll have more faith in your results if they can replicate your output from the same starting point.
 
-You don’t need the world’s biggest or fanciest data to do something interesting (a friend of mine once practiced R by analyzing the astrological sign of serial killers). The important thing is that you find a practice dataset that is captivates you, and supports your code and analysis goals.
+You don’t need the world’s biggest or fanciest dataset to do something interesting (a friend of mine once practiced R by analyzing the astrological sign of various serial killers). The important thing is that you find a practice dataset that sparks your curiosity, and teaches you the skills you'd like to learn.
 
 Remember, if it seems overwhelming - break the problem down. The data is on a website - how can you put it on your computer? The data is on your computer - how do you import it into R? Some form of the data in in R - what does it need to look like to make a scatterplot with it? 
 
-Obtaining and loading data can be a surprisingly tricky part of the process - feel good when you finally begin that journey of a thousand miles with this critical first step.
+Obtaining and loading data can be a surprisingly tricky part of the process - feel good when you finally begin that journey of a thousand miles with this essential first step.
 
 
 
@@ -36,17 +36,20 @@ Obtaining and loading data can be a surprisingly tricky part of the process - fe
 <a name="smallAmountEasyPracData"></a>
 ## A small amount of easy-to-load of practice data:
 
-For R users, [ The R datasets package. ](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
+- For R users, [the R datasets package](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html).
+
 R automatically loads this built-in library of datasets when it starts, so you’ll barely have to list a finger to use them. You can see the full list of options by typing data() into command line. Plus, since they’re already cleaned, these truly present the lowest barrier to practice an R practitioner can find.
 To load the dataset called “iris”, simply type:
 data(iris)
 
 Many have names that read like the titles of modern art pieces: “The World’s Telephones” (data(WorldPhones)), “Flow of the River Nile” (data(Nile)), “Occupational Status of Fathers and their Sons” (occupationalStatus). Easy doesn’t mean boring - there are tables to suit the tastes of a variety of nerds, from those in biotech (“Daily Closing Prices of Major European Stock Indices, 1991-1998”, data(esoph) ) to the history of finance (“Daily Closing Prices of Major European Stock Indices, 1991-1998” ( data(EuStockMarkets) ).
+
 I personally have found that, without context, I have a hard time getting excited about, say, “Body Temperature Series of Two Beavers” ( data(beavers) ). Plus, the datasets tend to be on the smaller side.
+
 Python users might have to do a little additional work, but have several options:
-[PyDataset](https://github.com/iamaziz/PyDataset) to access over 700 sample datasets
-[Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html) and [Scikit-learn](https://scikit-learn.org/stable/datasets/index.html) both come with example datasets preloaded
-If you just have to have those R datasets, consider using the [rpy2](https://pypi.org/project/rpy2/) package. It allows you to use R within Python, including loading the datasets above - described (here)(https://stackoverflow.com/questions/16579407/are-there-any-example-data-sets-for-python)
+- [PyDataset](https://github.com/iamaziz/PyDataset) to access over 700 sample datasets
+- [Seaborn](https://seaborn.pydata.org/generated/seaborn.load_dataset.html) and [Scikit-learn](https://scikit-learn.org/stable/datasets/index.html) both come with example datasets preloaded
+- If you've just gotta have those R datasets, consider using the [rpy2](https://pypi.org/project/rpy2/) package. It allows you to use R within Python, including loading the datasets above - described (here)(https://stackoverflow.com/questions/16579407/are-there-any-example-data-sets-for-python)
 
 ## Bigger data for civic-minded people
 [Data.gov](https://www.data.gov/)
