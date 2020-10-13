@@ -116,3 +116,15 @@ Hyde has two branches, but only one is used for active development.
 Open sourced under the [MIT license](LICENSE.md).
 
 <3
+
+## Kristin's Notes
+
+Fonts I like:
+https://fonts.google.com/specimen/Montserrat
+https://fonts.google.com/specimen/Sansita+Swashed
+https://fonts.google.com/specimen/Quicksand
+https://fonts.google.com/specimen/Indie+Flower?category=Handwriting
+https://fonts.google.com/specimen/Unica+One?category=Display&preview.text=Kristin%20L.%20Muench&preview.text_type=custom
+https://fonts.google.com/specimen/Fredericka+the+Great?category=Display&preview.text=Kristin%20L.%20Muench&preview.text_type=custom
+https://fonts.google.com/specimen/Corben?category=Display&preview.text=Kristin%20L.%20Muench&preview.text_type=custom
+https://fonts.google.com/specimen/Darker+Grotesque?category=Sans+Serif&preview.text=Kristin%20L.%20Muench&preview.text_type=custom
